@@ -5,11 +5,11 @@ import os
 
 load_dotenv()
 
-url = "https://api.openweathermap.org/data/2.5/forecast"
-
 my_email = os.getenv("MY_EMAIL")
 password = os.getenv("MY_PASSWORD")
 api_key = os.getenv("API_KEY")
+
+url = "https://api.openweathermap.org/data/2.5/forecast"
 
 parameters = {
     "lat": 54.978252,
