@@ -2,12 +2,12 @@ import requests
 import smtplib
 import os
 
-api_key = "6a929261f28cee0e0ed2f40a7e8ff49c"
+api_key = os.environ["API_KEY"]
 
 url = "https://api.openweathermap.org/data/2.5/forecast"
 
-my_email = "nairar01@gmail.com"
-password = "evdpkmantofpplvm"
+my_email = os.environ["MY_EMAIL"]
+password = os.environ["MY_PASSWORD"]
 
 parameters = {
     "lat": 54.978252,
