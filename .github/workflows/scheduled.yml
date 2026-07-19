@@ -23,7 +23,7 @@ jobs:
 
       - name: Run rain alert
         env:
-          OWM_API_KEY: ${{ secrets.OWM_API_KEY }}
+          API_KEY: ${{ secrets.API_KEY }}
           MY_EMAIL: ${{ secrets.MY_EMAIL }}
           MY_PASSWORD: ${{ secrets.MY_PASSWORD }}
         run: python main.py
